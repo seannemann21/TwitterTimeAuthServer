@@ -1,8 +1,8 @@
 require 'test_helper'
 
 class ApiControllerTest < ActionDispatch::IntegrationTest
-  test "should get request_token" do
-    get api_request_token_url
+  test "should get test" do
+    get api_test_url
     assert_response :success
   end
 
