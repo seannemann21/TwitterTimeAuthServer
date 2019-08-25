@@ -10,6 +10,7 @@ class TwitterController < ApplicationController
     end
 
     puts "\n\n\n\n\n"
+    puts "configuration should be below"
     puts config.consumer_key
     puts config.consumer_secret
     puts config.access_token
