@@ -10,7 +10,10 @@ class TwitterController < ApplicationController
     end
 
     puts "\n\n\n\n\n"
-    puts config
+    puts config.consumer_key
+    puts config.consumer_secret
+    puts config.access_token
+    puts config.access_token_secret
     puts "\n\n\n\n\n"
     home_timeline = client.home_timeline
     puts home_timeline
