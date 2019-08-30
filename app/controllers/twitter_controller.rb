@@ -7,8 +7,6 @@ class TwitterController < ApplicationController
       config.consumer_secret     = "ttruIGqsiA849B2Z9KNwv3pk76SlUGqXMciEFdYRCB2X4YMouK"
       config.access_token        = params[:token]
       config.access_token_secret = params[:secret]
-      puts config.methods
-      config.tweet_mode = "extended"
       puts "\n\n\n\n\n"
       puts "configuration should be below"
       puts config.consumer_key
@@ -40,6 +38,6 @@ class TwitterController < ApplicationController
       puts "\n\n\n\n\n"
     end
 
-
+    render :json => client.status(params[:tweet_id], tweet_mode: 'extended')
   end
 end
