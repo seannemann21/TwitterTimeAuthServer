@@ -38,6 +38,6 @@ class TwitterController < ApplicationController
       puts "\n\n\n\n\n"
     end
 
-    render :json => client.status(params[:tweet_id], tweet_mode: 'extended')
+    render :json => client.status(params[:tweet_id].to_i, tweet_mode: 'extended')
   end
 end
