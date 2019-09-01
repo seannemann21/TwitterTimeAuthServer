@@ -38,6 +38,6 @@ class TwitterController < ApplicationController
     puts params[:tweet_id]
     puts params[:tweet_id].to_i
 
-    render :json => client.status(1168172108612100000, tweet_mode: 'extended')
+    render :json => client.status(1168174613827899400, tweet_mode: 'extended')
   end
 end
